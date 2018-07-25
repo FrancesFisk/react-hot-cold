@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: eFfwDb/GlzOcW+DXcefsZtW4QPF+zNVuCoZAQXOU8XKNwkZGrLSBK8kOqi0T3EgY7eOOI6dOOl89cr1Utry7OlEfUSFLbPbD+Xmb/14M0EiF1wfua9oLyzm+NY5tQS2ZewxfUJ6fJRrRMoEMpLzhMyYuNJYQblj9BzwNfPD2xvrvdlC0oHpvde23ppPqeSPCC8yvgDznJp6s6wVCdo2Dgvmq/+g/kZp/qLnHqNTokpPSu0LSQIJZ8LvqmRkb4r/LICkmcgxLmgqcDZIfMUJRyFXCNfGA3meCFQPN8rn+i8gHFhvS/K4t1/+L8EAvRlQ6fVlHuOAUh9lFkGH93cG6v/Q2xggxzTA5Z9JWmD8ZWNyUCI754+iMc7jn7nXG1tFyyu55rrt54vpsaWEVVNIzq61DNCrvo4Ifd3xileEm6qQi+GTOc4vWVAHzRvDW+9BgmW6pbGzBVesEoQNe7en3QEI4VnvFXI11TmDsc7HdII7N/W1drGxnJG3c+a69uqNLNUsYwKQrgIYzW7gdyGmfzSS8kN7OWt4WUwAE36TvLxKDdrWti9zoBrE2H8R9zks5ok3ltZePTHUQYNaDkLP5I8GSgwGyKhU9lZZgvXvoep+X7zKrPLWzQ6IW3NgBd0n3VAiAxMGYbhz23HfQmV4RSceP7laH8Cd4RlZvJ/BxqeY=
+  app: gentle-badlands-77557
+  on:
+    repo: FrancesFisk/react-hot-cold
