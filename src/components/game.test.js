@@ -8,7 +8,7 @@ describe('<Game />', () => {
     shallow(<Game />);
   });
 
-  it('Can starts a new game', () => {
+  it('Can start a new game', () => {
     const wrapper = shallow(<Game />);
     // Mess up the state a bit to simulate an existing game
     wrapper.setState({
@@ -16,6 +16,7 @@ describe('<Game />', () => {
       feedback: 'Awesome',
       correctAnswer: -1 // Negative so different to new game
     });
+    // you're not calling the class itself but an instance of it
     wrapper.instance().restartGame();
     expect(wrapper.state('guesses')).toEqual([]);
     expect(wrapper.state('feedback')).toEqual('Make your guess!');
