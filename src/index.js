@@ -8,7 +8,7 @@ import './reset.css';
 import './index.css';
 
 ReactDOM.render(
-  //   When the Provider is in palce, components can access parts of the store including the dispatch method, using the connect method.
+  //   When the Provider is in place, components can access parts of the store including the dispatch method, using the connect method.
   <Provider store={store}>
     <Game />
   </Provider>,

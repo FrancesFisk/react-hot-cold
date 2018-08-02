@@ -1,7 +1,7 @@
 export const ADD_GUESSES = 'ADD_GUESSES';
 export const addGuesses = guess => ({
   type: ADD_GUESSES,
-  guesses
+  guess
 });
 
 export const SET_FEEDBACK = 'SET_FEEDBACK';
@@ -11,13 +11,13 @@ export const setFeedback = feedback => ({
 });
 
 export const SET_AURAL_STATUS = 'SET_AURAL_STATUS';
-export const setAuralStatus = status => ({
+export const setAuralStatus = auralStatus => ({
   type: SET_AURAL_STATUS,
   auralStatus
 });
 
 export const SET_CORRECT_ANSWER = 'SET_CORRECT_ANSWER';
-export const setCorrectAnswer = answer => ({
+export const setCorrectAnswer = correctAnswer => ({
   type: SET_CORRECT_ANSWER,
-  correctAnswer
+  correctAnswer: Math.floor(Math.random() * 100) + 1
 });
